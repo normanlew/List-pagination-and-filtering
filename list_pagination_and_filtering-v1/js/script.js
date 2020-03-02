@@ -95,7 +95,7 @@ function appendPageLinks(list) {
          ul.appendChild(li);
       }
 
-         // When the webpage if first loaded, the 1st pagination link/button is 
+         // When the webpage is first loaded, the 1st pagination link/button is 
          // highlighted, with the first ten (or less than ten if there are
          // less than ten) students shown on the first page.
          const li = ul.firstElementChild;
