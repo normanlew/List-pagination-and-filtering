@@ -65,14 +65,14 @@ function appendPageLinks(list) {
    const divPaginationLinks = document.createElement('div');
 
    // This is the number of pages that should be shown
-   const totalPages = list.length / numStudentsPerPage;
+   const totalPages = Math.ceil(list.length / numStudentsPerPage);
 
    if (totalPages > 0) {
       const ul = document.createElement('ul');
       divPaginationLinks.className = 'pagination';
 
       // This loop creates each pagination button, one for each page
-      for (let i = 1; i <= totalPages + 1; i++) {
+      for (let i = 1; i <= totalPages; i++) {
          const li = document.createElement('li');
          const a = document.createElement('a');
          a.setAttribute('href', '#');
